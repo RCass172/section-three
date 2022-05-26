@@ -3,7 +3,7 @@ package main.java.com.zinkworks;
 public class Main {
     public static void main(String[] args) {
 
-        // Primitive vars
+        // Primitive data types
         int one = -240000000;
         int myMinInt = Integer.MIN_VALUE;
         int myMaxInt = Integer.MAX_VALUE;
@@ -45,5 +45,34 @@ public class Main {
         double pounds = 200d;
         double kiloResult = pounds * 0.45359237;
         System.out.println(pounds + " pounds = " + kiloResult + "kg");
+
+        char myChar = 'D';
+        // https://unicode-table.com/en/
+        char myUnicodeChar = '\u0044';
+        char myUnicodeCopyrightChar = '\u00A9';
+        System.out.println(myChar);
+        System.out.println(myUnicodeChar);
+        System.out.println(myUnicodeCopyrightChar);
+
+        // Ternary operator
+        boolean isCar = true;
+        // if condition isCar is true, assign true, else assign false
+        boolean wasCar = isCar ? true : false;
+        if (wasCar) {
+            System.out.println("wasCar is true");
+        }
+
+        double var = 20.00;
+        double varTwo  = 80.00;
+        double varThree = (var + varTwo) * 100.00;
+        double remainder = varThree % 40.00;
+        System.out.println(remainder);
+        boolean isNoRemainder = remainder == 0;
+
+        if (!isNoRemainder) {
+            System.out.println("Got some remainder");
+        } else {
+            System.out.println("No remainder");
+        }
     }
 }
